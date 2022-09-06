@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 577px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9";
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 578px) {
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8"
+      "item9 cont2";
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1029px) {
+  .container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "item1 item2 item2"
+      "item3 item2 item2"
+      "item4 item5 item6"
+      "item7 item8 item9";
+    gap: 10px;
+  }
+}
+
+.item {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.cont2 {
+  grid-area: auto;
+}
+.item1 {
+  grid-area: item1;
+  content: url(https://media.istockphoto.com/photos/table-top-view-of-verity-of-food-picture-id1316145889?k=20&m=1316145889&s=612x612&w=0&h=t_CQc0ZwmSKHt6hfAux-E2qZz8Kym6Aj7QP4nBDudbQ=);
+}
+
+.item2 {
+  grid-area: item2;
+  content: url(https://media.istockphoto.com/photos/variety-of-food-ready-to-eat-picture-id1321284698?k=20&m=1321284698&s=612x612&w=0&h=Q_hM2O5XZNwS8PVeymz6gQAHYxg9HJ7OgZvSj7xZeUg=);
+}
+
+.item3 {
+  grid-area: item3;
+  content: url(https://media.istockphoto.com/photos/diverse-plates-of-mediterranean-and-western-food-ranging-from-shrimp-picture-id1304350137?k=20&m=1304350137&s=612x612&w=0&h=He3eFjRXk98QR7zOslOmR5Z58zKaPXSSvSF5P2JTsLk=);
+}
+
+.item4 {
+  grid-area: item4;
+  content: url(https://media.istockphoto.com/photos/roast-beef-steak-with-corn-pea-soup-sliced-meat-bbq-pork-ribs-chicken-picture-id1393199153?k=20&m=1393199153&s=612x612&w=0&h=WnZONZcsn2xYklFVyzAkQXSZboYoGbp7xae4VkZpT_Y=);
+}
+
+.item5 {
+  grid-area: item5;
+  content: url(https://media.istockphoto.com/photos/top-view-composition-of-various-asian-food-in-bowl-picture-id1184365354?k=20&m=1184365354&s=612x612&w=0&h=_sq1uvqcCa3BhQCCjy90VbexkfnCU2YrRe-j4SM7TTw=);
+}
+
+.item6 {
+  grid-area: item6;
+  content: url(https://media.istockphoto.com/photos/eating-thai-cusines-picture-id1273241280?k=20&m=1273241280&s=612x612&w=0&h=Ys8yqzD8Boe4A4YSRMAWa0g76suTL5tGY8quVAu6eX4=);
+}
+
+.item7 {
+  grid-area: item7;
+  content: url(https://media.istockphoto.com/photos/view-from-above-of-a-variety-of-filipino-cuisine-dishes-picture-id1365553240?k=20&m=1365553240&s=612x612&w=0&h=6Z7o28a58ffXMXs1Hjf7DqjzbnvyOMB6DaZYx44CBQo=);
+}
+
+.item8 {
+  grid-area: item8;
+  content: url(https://media.istockphoto.com/photos/assorted-spanish-food-set-paella-seafood-platters-grilled-seafood-picture-id1151187686?k=20&m=1151187686&s=612x612&w=0&h=7cPxC1piF0vcUInJEWZ4ZP-r5Aog4pnLeM1uNsNsWdI=);
+}
+
+.item9 {
+  grid-area: item9;
+  content: url(https://media.istockphoto.com/photos/asian-food-picture-id1324632222?k=20&m=1324632222&s=612x612&w=0&h=YZizzedGQql_tvCtSTN3Y-OcTYCbTSns2gcdl4hXfgE=);
+}
